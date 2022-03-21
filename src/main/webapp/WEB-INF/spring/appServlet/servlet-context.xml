@@ -22,6 +22,8 @@
 	</beans:bean>
 	
 	<context:component-scan base-package="a.b.travel" />
+	<context:component-scan base-package="main" />
+	<context:component-scan base-package="menu.activities" />
 	
 	
 	

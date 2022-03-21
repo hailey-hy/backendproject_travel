@@ -5,15 +5,15 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="<%=request.getContextPath() %>/resources/css/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <title>전국이내손안에</title>
+    <script src="<%=request.getContextPath() %>/resources/jquery-3.6.0.min.js"></script>
+    <title>전국이내손안에 - main</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">&nbsp;&nbsp;<img src="img/logo.png" width="50px" height="50px">&nbsp;&nbsp;전국이내손안에</a>
+        <a class="navbar-brand" href="#">&nbsp;&nbsp;<img src="<%=request.getContextPath() %>/resources/img/logo.png" width="50px" height="50px">&nbsp;&nbsp;전국이내손안에</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -36,7 +36,7 @@
     <header class="showcase">
         <div class="showcase-content">
             <br>
-            <img src="img/logo.png" class="showcase-img" alt="logo">
+            <img src="<%=request.getContextPath() %>/resources/img/logo.png" class="showcase-img" alt="logo">
             <br>
             <h1>환영합니다!</h1>
             <p>언제 어디서든 간편하게 여행을 즐기세요!</p>

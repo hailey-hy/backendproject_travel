@@ -4,12 +4,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>전국이내손안에 - 여행지티켓예약</title>
+<title>전국이내손안에 - 제주도여행지티켓</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.8.18/themes/base/jquery-ui.css" type="text/css" />
-<link href="./css/purchaseMenu.css" rel="stylesheet">
-<script src="./js/jquery-3.6.0.min.js"></script>
-<script src="./js/btnFunction.js"></script>
+<link href="<%=request.getContextPath() %>/resources/css/purchaseMenu.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="<%=request.getContextPath() %>/resources/js/setMinDate.js"></script>
+<script src="<%=request.getContextPath() %>/resources/jquery-3.6.0.min.js"></script>
+<script src="<%=request.getContextPath() %>/resources/js/btnFunction.js"></script>
 <script>
 	$(document).ready(function() {
 
@@ -51,7 +53,7 @@
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href="#">&nbsp;&nbsp;<img src="./img/logo.png" width="50px" height="50px">&nbsp;&nbsp;전국이내손안에</a>
+		<a class="navbar-brand" href="#">&nbsp;&nbsp;<img src="img/logo.png" width="50px" height="50px">&nbsp;&nbsp;전국이내손안에</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse"
 			data-target="#navbarSupportedContent"
 			aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -107,7 +109,7 @@
 		<table class="tbl">
 			<tr><td><h4>원하시는 <strong>여행지 티켓</strong>을 선택하여 주세요.</h4></td></tr>
 			<tr>
-				<td><img class="mainImg" src="./img/seaEx_jjdo.jpg"></td>
+				<td><img class="mainImg" src="<%=request.getContextPath() %>/resources/img/seaEx_jjdo.jpg"></td>
 				<td id="seaEx" class="explanation">
 					<h4>제주 바다 체험장</h4>
 					<hr>
@@ -122,10 +124,17 @@
 					</ul>
 				</td>
 				<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-				<td><input type="radio" name="option" value="제주 바다 체험장" required/></td>
+				<td>
+					<!-- <input type="radio" name="option" value="제주 바다 체험장" required/> -->
+					<label>총 인원 수</label><br>
+					<input id="count"  type="number" pattern="^[0-9]{1-1000}" title='Only Number' min="1" step="1"><br><br>
+					<label>예약 날짜</label><br>
+					<input class="date" id="activities_jjdo1_date" type="date" required><br><br><br>
+					<input id="activities_jjdo1" class="btn-blue" type="button" name="option" value="예매하기" required />	
+				</td>
 			</tr>
 			<tr>
-				<td><img class="mainImg" src="./img/tangerineEx_jjdo.jpg"></td>
+				<td><img class="mainImg" src="<%=request.getContextPath() %>/resources/img/tangerineEx_jjdo.jpg"></td>
 				<td id="tangerineEx" class="explanation">
 					<h4>감귤 박물관</h4>
 					<hr>
@@ -141,10 +150,17 @@
 					</ul>
 				</td>
 				<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-				<td><input type="radio" name="option" value="제주 감귤 박물관" required/></td>
+				<td>
+					<!-- <input type="radio" name="option" value="제주 감귤 박물관" required/> -->
+					<label>총 인원 수</label><br>
+					<input id="count"  type="number" pattern="^[0-9]{1-1000}" title='Only Number' min="1" step="1"><br><br>
+					<label>예약 날짜</label><br>
+					<input class="date" id="activities_jjdo2_date" type="date" required><br><br><br>
+					<input id="activities_jjdo2" class="btn-blue" type="button" name="option" value="예매하기" required />	
+				</td>
 			</tr>
 			<tr>
-				<td><img class="mainImg" src="./img/herbEx_jjdo.jpg"></td>
+				<td><img class="mainImg" src="<%=request.getContextPath() %>/resources/img/herbEx_jjdo.jpg"></td>
 				<td id="herbEx" class="explanation">
 					<h4>허브 동산</h4>
 					<hr>
@@ -158,8 +174,15 @@
 					</ul>
 				</td>
 				<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-				<td><input type="radio" name="option" value="제주 허브 동산" required/></td>
-				<td>	
+				<td>
+					<!-- <input type="radio" name="option" value="제주 허브 동산" required/> -->
+					<label>총 인원 수</label><br>
+					<input id="count"  type="number" pattern="^[0-9]{1-1000}" title='Only Number' min="1" step="1"><br><br>
+					<label>예약 날짜</label><br>
+					<input class="date" id="activities_jjdo3_date" type="date" required><br><br><br>
+					<input id="activities_jjdo3" class="btn-blue" type="button" name="option" value="예매하기" required />	
+				</td>
+				<!-- <td>	
 					<div id="float-container">
 						<div>
 						   	<label for="textbox">총 인원 수</label><br>
@@ -173,7 +196,7 @@
 						    <input type="submit" id="btn_reservation" class="btn-blue" value="예매하기"/>
 						</div>
 					</div>
-				</td>
+				</td> -->
 			</tr>
 		</table>
 	</form>

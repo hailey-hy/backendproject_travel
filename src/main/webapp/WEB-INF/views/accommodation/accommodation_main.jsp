@@ -4,12 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<script src="http://localhost:8080/jquery/js/jquery-3.6.0.min.js"></script>
-<link href="/jquery/project_jm/jeongmin.css" rel="stylesheet">
-<script src="/jquery/project_jm/btnFunction.js"></script>
-<link href = "./css/layout.css" rel="stylesheet">
-<title>전국이내손안에</title>
+<script src="<%=request.getContextPath() %>/resources/jquery-3.6.0.min.js"></script>
+<script src="<%=request.getContextPath() %>/resources/js/btnFunction.js"></script>
+<link href = "<%=request.getContextPath() %>/resources/css/layout.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<title>전국이내손안에 - 숙박</title>
 <style>
 .photo{
 display: none;

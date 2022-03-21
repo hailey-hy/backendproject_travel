@@ -8,8 +8,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-<link rel="stylesheet" href="css/mypage.css">
-<title>전국이내손안에-마이페이지</title>
+<link rel="stylesheet" href="<%=request.getContextPath() %>/resources/css/mypage.css">
+<script src="<%=request.getContextPath() %>/resources/jquery-3.6.0.min.js"></script>
+<title>전국이내손안에 - 마이페이지</title>
 </head>
 
 <body>

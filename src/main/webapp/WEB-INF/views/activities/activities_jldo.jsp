@@ -4,12 +4,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>전국이내손안에 - 여행지티켓예약</title>
+<title>전국이내손안에 - 전라도여행지티켓</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.8.18/themes/base/jquery-ui.css" type="text/css" />
-<link href="./css/purchaseMenu.css" rel="stylesheet">
-<script src="./js/jquery-3.6.0.min.js"></script>
-<script src="./js/btnFunction.js"></script>
+<link href="<%=request.getContextPath() %>/resources/css/purchaseMenu.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="<%=request.getContextPath() %>/resources/js/setMinDate.js"></script>
+<script src="<%=request.getContextPath() %>/resources/jquery-3.6.0.min.js"></script>
+<script src="<%=request.getContextPath() %>/resources/js/btnFunction.js"></script>
 <script>
 	$(document).ready(function() {
 		
@@ -105,7 +107,7 @@
 		<table class="tbl">
 			<tr><td><h4>원하시는 <strong>여행지 티켓</strong>을 선택하여 주세요.</h4></td></tr>
 			<tr>
-				<td><img class="mainImg" src="./img/cableOceanEx_jldo.jpg"></td>
+				<td><img class="mainImg" src="<%=request.getContextPath() %>/resources/img/cableOceanEx_jldo.jpg"></td>
 				<td id="cableOceanEx" class="explanation">
 					<h5>명량 케이블카 & 땅끝 해양 자연사 박물관</h5>
 					<hr>
@@ -120,10 +122,17 @@
 					</ul>
 				</td>
 				<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-				<td><input type="radio" name="option" value="해남 명량 케이블카 & 땅끝 해양 자연사 박물관" required/></td>
+				<td>
+					<!-- <input type="radio" name="option" value="해남 명량 케이블카 & 땅끝 해양 자연사 박물관" required/> -->
+					<label>총 인원 수</label><br>
+					<input id="count"  type="number" pattern="^[0-9]{1-1000}" title='Only Number' min="1" step="1"><br><br>
+					<label>예약 날짜</label><br>
+					<input class="date" id="activities_jldo1_date" type="date" required><br><br><br>
+					<input id="activities_jldo1" class="btn-blue" type="button" name="option" value="예매하기" required />	
+				</td>
 			</tr>
 			<tr>
-				<td><img class="mainImg" src="./img/iceDinoEx_jldo.jpg"></td>
+				<td><img class="mainImg" src="<%=request.getContextPath() %>/resources/img/iceDinoEx_jldo.jpg"></td>
 				<td id="iceDinoEx" class="explanation">
 				<h4>쥬키아이스파크 입장권</h4>
 				<hr>
@@ -138,8 +147,15 @@
 				</ul>
 				</td>
 				<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-				<td><input type="radio" name="option" value="광주 쥬키아이스파크" required/></td>
-				<td>	
+				<td>
+					<!-- <input type="radio" name="option" value="광주 쥬키아이스파크" required/> -->
+					<label>총 인원 수</label><br>
+					<input id="count"  type="number" pattern="^[0-9]{1-1000}" title='Only Number' min="1" step="1"><br><br>
+					<label>예약 날짜</label><br>
+					<input class="date" id="activities_jldo2_date" type="date" required><br><br><br>
+					<input id="activities_jldo2" class="btn-blue" type="button" name="option" value="예매하기" required />	
+				</td>
+				<!-- <td>	
 					<div id="float-container">
 						<div>
 						   	<label for="textbox">총 인원 수</label><br>
@@ -153,7 +169,7 @@
 						    <input type="submit" id="btn_reservation" class="btn-blue" value="예매하기"/>
 						</div>
 					</div>
-				</td>
+				</td> -->
 			</tr>
 		</table>
 	</form>

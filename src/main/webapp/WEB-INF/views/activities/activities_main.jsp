@@ -4,11 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>전국이내손안에 - 여행지티켓예약</title>
+<title>전국이내손안에 - 여행지티켓</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-<link href="./css/purchaseMenu.css" rel="stylesheet">
-<script src="./js/jquery-3.6.0.min.js"></script>
-<script src="./js/btnFunction.js"></script>
+<link href="<%=request.getContextPath() %>/resources/css/purchaseMenu.css" rel="stylesheet">
+<script src="<%=request.getContextPath() %>/resources/jquery-3.6.0.min.js"></script>
+<script src="<%=request.getContextPath() %>/resources/js/btnFunction.js"></script>
 <style>
 .photo{
 display: none;
@@ -115,12 +115,12 @@ margin: auto;
 			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 			<td>
 				<div id="photoParent">
-					<img class="photo" alt="가평 아침 고요 수목원" src="./img/arboretumEx2_ggdo.jpg">
-					<img class="photo" alt="대관령 아기동물 체험장" src="./img/animalEx_gwdo.jpg">
-					<img class="photo" alt="스플라스 리솜 워터파크" src="./img/waterParkEx_ccdo.jpg">
-					<img class="photo" alt="해남 명량 케이블카" src="./img/cableOceanEx_jldo.jpg">
-					<img class="photo" alt="양산 에덴 밸리 눈썰매" src="./img/sledEx2_gsdo.jpg">
-					<img class="photo" alt="제주 감귤 박물관" src="./img/tangerineEx_jjdo.jpg">
+					<img class="photo" alt="가평 아침 고요 수목원" src="<%=request.getContextPath() %>/resources/img/arboretumEx2_ggdo.jpg">
+					<img class="photo" alt="대관령 아기동물 체험장" src="<%=request.getContextPath() %>/resources/img/animalEx_gwdo.jpg">
+					<img class="photo" alt="스플라스 리솜 워터파크" src="<%=request.getContextPath() %>/resources/img/waterParkEx_ccdo.jpg">
+					<img class="photo" alt="해남 명량 케이블카" src="<%=request.getContextPath() %>/resources/img/cableOceanEx_jldo.jpg">
+					<img class="photo" alt="양산 에덴 밸리 눈썰매" src="<%=request.getContextPath() %>/resources/img/sledEx2_gsdo.jpg">
+					<img class="photo" alt="제주 감귤 박물관" src="<%=request.getContextPath() %>/resources/img/tangerineEx_jjdo.jpg">
 				</div>
 			</td>
 		</tr>
