@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+h1 {
+	font-size: 50px;
+	width: 550px;
+	font-weight: bolder;
+	text-align: center;
+	margin: auto;
+}
+
+h4, h5 {
+	font-weight: bolder;
+}
+div#title {
+	width: 555px;
+	margin: auto;
+	text-align: center;
+}
+
+.tab-item {
+	width: 250px;
+	display: inline-block;
+	font-size: 25px;
+/* 	font-weight: bold; */
+	text-align: center;
+	margin: auto;
+ 	border: none;
+	border-radius: 20px;
+}
+.tab-item:hover{
+	background-color: aliceblue;
+    color: #44a2ce;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.tab-background {
+    background-color: aliceblue;
+    color: #44a2ce;
+    font-weight: bold;
+    border: 3px solid #44a2ce;
+    border-radius: 20px;
+}
+
+#selectParent {
+	width: 1570px;
+	margin: auto;
+}
+.tbl{
+	width: 1200px;
+	margin: 30px auto;
+}
+.explanation {
+	border: solid 3px;
+	display: inline-block;
+	width: 450px;
+	height: 370px;
+	padding: 20px;
+	border-radius: 15px;
+	margin: 20px;
+	background-color: white;
+}
+.mainImg {
+	height: 370px;
+	width: 600px;
+}
+#float-container{
+	margin-left: 100px;
+}
+#float-container div{
+ 	text-align: center; 
+}
+label{
+	font-size: 20px;
+	font-weight:bold;
+}
+
+.para{
+	font-stretch: wider;
+	font-size: 25px;	
+	font-style: oblique;
+}
+#para{
+	font-style:normal;
+	color: navy;
+	font-weight: bolder;
+	font-size: 30px;	
+}
+#mainPara{
+	margin: 30px auto;
+	
+}
+#mainParaTitle{
+	font-size: 35px;
+	font-stretch: wider;
+}
+
+.btn-blue {
+    position: relative;
+    border: none;
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.25s;
+    background-color: aliceblue;
+    color: #44a2ce;
+}
+
+.btn-blue:hover {
+    letter-spacing: 2px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+#textbox, #date {
+	border-radius: 10px; 
+	width: 230px; 
+}
+#logo{
+	width: 200px;
+	height: 200px;
+}
+
+#para:hover{
+	transform: scale(1.2);
+}
+

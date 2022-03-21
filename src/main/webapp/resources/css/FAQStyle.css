@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.title h2{
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    margin-top: 9rem;
+    margin-bottom: 2rem;
+}
+
+.container-logo {
+    display: grid;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-logo img {
+    width: 150px;
+}
+.tabs {
+    padding-top: 1rem;
+}
+
+.tabs .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.tabs p {
+    font-size: 1.2rem;
+    padding-top: 0.5rem;
+}
+
+.tabs .container > div {
+    padding: 1rem 0;
+}
+
+.tab-item:hover{
+    background-color: aliceblue;
+    color: #44a2ce;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.tab-background {
+    background-color: aliceblue;
+    color: #44a2ce;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.tab-content {
+    padding: 3rem;
+    background: aliceblue;
+}
+
+#tab-1-content, 
+#tab-2-content, 
+#tab-3-content, 
+#tab-4-content, 
+#tab-5-content, 
+#tab-6-content, 
+#tab-7-content,
+#tab-8-content {
+    display: none;
+    opacity: 0;
+}
+
+.show {
+    display: block !important;
+    opacity: 1 !important;
+    transition: all 1000 ease-in;
+}
+
+.tab-inner-title {
+    margin-bottom: 2.5rem;
+    padding-bottom: 1rem;
+    border-bottom: rgb(59, 59, 59) 2px solid;
+}
+
+.tab-inner-list {
+    display: grid;
+    grid-template-columns: repeat(1, 5fr);
+    grid-gap: 1.5rem;
+}
+
+.tab-inner-questions {
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    text-align: left;
+}
+
+.tab-inner-questions:hover {
+    background-color: rgb(230, 230, 230);
+    color: #000000;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.service-center-container {
+    display: grid;
+    grid-template-columns: repeat(2, 5fr);
+}
+
+.service-center-text {
+    padding-left: 2rem;
+}
+
+.service-center-title{
+    margin-bottom: 3rem;
+}
+
+.h4 {
+    margin-bottom: 0.5rem;
+}
+
+.text-guide{
+    margin-bottom: 1.5rem;
+}
+
+.img-container {
+    margin: auto;
+    align-items: center;
+}
+
+.img {
+    width: 180px;
+}
+
+@media(min-width: 800px){
+    .tabs {
+        width: 800px;
+        margin: auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    .tab-content {
+        width: 800px;
+        margin: auto;
+        align-items: center;
+        text-align: left;
+    }
+}

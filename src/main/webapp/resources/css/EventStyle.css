@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.title h2{
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.container-logo {
+    display: grid;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-logo img {
+    width: 150px;
+}
+
+.tabs {
+    padding-top: 1rem;
+}
+
+.tabs .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.tabs p {
+    font-size: 1.2rem;
+    padding-top: 0.5rem;
+}
+
+.tabs .container > div {
+    padding: 1.5rem 0;
+}
+
+.tab-item:hover{
+    background-color: aliceblue;
+    color: #44a2ce;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.tab-background {
+    background-color: aliceblue;
+    color: #44a2ce;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.tab-content {
+    padding: 3rem;
+    background: #91D8FA;
+}
+
+#tab-1-content, #tab-2-content, #tab-3-content {
+    display: none;
+    opacity: 0;
+}
+
+.show {
+    display: block !important;
+    opacity: 1 !important;
+    transition: all 1000 ease-in;
+}
+
+#tab-1-content .tab-1-content-inner {
+    display: grid;
+    grid-template-columns: 5fr;
+    grid-gap: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#tab-2-content .tab-2-content-inner {
+    display: grid;
+    grid-template-columns: 5fr;
+    grid-gap: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#tab-3-content .tab-3-content-inner {
+    display: grid;
+    grid-template-columns: 5fr;
+    grid-gap: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab-content-item h4 {
+    text-align: left;
+}
+
+.table {
+    width: 100%;
+    margin: auto;
+    background-color: #fff;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.table thead th {
+    padding: 0.8rem;
+    border: 1px solid #91D8FA;
+    border-bottom: 1px solid #91D8FA;
+}
+
+.table tbody tr td {
+    padding: 0.8rem;
+    text-align: center;
+    border: 1px solid #91D8FA;
+}
+
+.check {
+    margin-bottom: 1.5rem;
+}
+
+button {
+    margin: 20px;
+}
+
+.btn-blue {
+    position: relative;
+    border: none;
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.25s;
+    background-color: aliceblue;
+    color: #44a2ce;
+    font-size: 100%;
+}
+
+.btn-blue:hover {
+    letter-spacing: 2px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+@media(min-width: 800px){
+    .tabs {
+        width: 800px;
+        margin: auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    .tab-content {
+        width: 800px;
+        margin: auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    h3 {
+        text-align: left;
+    }
+}

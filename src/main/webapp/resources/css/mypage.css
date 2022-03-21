@@ -1,0 +1,97 @@
+/* mypage tabs */
+.myTabs {
+    width: 100%;
+    background: #91D8FA;
+    padding-top: 1rem;
+    border-bottom: 3px solid #3d3d3d;
+}
+
+.myTabs .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    align-items : center;
+    justify-content: center;
+    text-align: center;
+}
+
+.myTabs p {
+    font-size: 20px;
+    padding-top: 0.5rem;
+    font-weight: 1000;
+}
+
+.myTabs .container > div {
+    padding: 1.5rem 0;
+}
+
+.myTabs .container > div:hover {
+    color: rgb(14, 13, 13);
+    cursor: pointer;
+}
+.myTab-border {
+    border-bottom: rgb(0, 0, 0) 4px solid;
+}
+
+.myTab-content {
+    padding: 20rem;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+#myTab-1-content,
+#myTab-2-content,
+#myTab-3-content{
+    display: none;
+}
+
+.show {
+    display: block !important;
+}
+
+#myTab-1-content .myTab-1-content-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#myTab-2-content .myTab-2-content-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#myTab-3-content .myTab-3-content-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+/* mypage footer */
+.footer {
+    max-width: 75%;
+    margin: 1rem auto;
+    overflow: auto;
+    margin-bottom: 0rem;
+}
+
+.footer, .footer a {
+    color : #999;
+    font-size: 0.9rem;
+}
+
+.footer .footer-cols {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+}
+
+.footer li {
+    line-height: 1.9;
+}

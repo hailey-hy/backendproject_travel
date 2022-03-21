@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.title h2{
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    margin-top: 9rem;
+    margin-bottom: 2rem;
+}
+
+.container-logo {
+    display: grid;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-logo img {
+    width: 150px;
+}
+
+.container-top{
+    margin: 0 1rem 0 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding: 1rem;
+    border-bottom: rgb(59, 59, 59) 2px solid;
+    
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 800px;
+    grid-gap: 2rem;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+.content-detail {
+    padding: 2rem;
+    background-color: aliceblue;
+    border-radius: 20px;
+}
+
+.content-title {
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.content-author {
+    color: #505050;
+    margin: auto;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+.content-subtitle {
+    display: grid;
+    grid-template-columns: 7rem 15rem 6rem;
+    grid-gap: 0.5rem;
+    margin-bottom: 2rem;
+    text-align: left;
+    color: #505050;
+    font-size: 0.9rem;
+}
+
+.content-star {
+    border-right: #cccccc 1px solid;
+}
+
+.content-type {
+    margin-left: 0.3rem;
+}
+
+.date-time {
+    text-align: right;
+}
+
+.content-bottom {
+    text-align: left;
+}
+
+.btn-add {
+    width: 180px;
+    position: relative;
+    border: none;
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.25s;
+    background-color: #91D8FA;
+    font-weight: bold;
+    /* float: right; */
+}
+
+.btn-add:hover {
+    letter-spacing: 1px;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+@media(min-width: 800px){
+    .container{
+        width: 500px;
+        margin: auto;
+        align-items: center;
+    }
+
+    .container-top{
+        margin: auto;
+        align-items: center;
+        width: 800px
+    }
+
+    .container-detail {
+        width: 800px;
+    }
+}

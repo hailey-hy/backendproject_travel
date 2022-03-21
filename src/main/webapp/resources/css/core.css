@@ -1,0 +1,175 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.title {
+    margin: 0px auto;
+    align-items: center;
+    text-align: center;
+    margin-top: 9rem;
+    margin-bottom: 2rem;
+}
+
+.tabs {
+    padding-top: 1rem;
+}
+
+.tabs .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.tabs p {
+    font-size: 1.2rem;
+    padding-top: 0.5rem;
+}
+
+.tabs .container > div {
+    padding: 1.5rem 0;
+}
+
+.tab-background {
+    background-color: aliceblue;
+    color: #44a2ce;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.tab-content {
+    padding: 3rem;
+    background: #91D8FA;
+}
+
+#tab-1-content, #tab-2-content, #tab-3-content {
+    display: none;
+    opacity: 0;
+}
+
+.show {
+    display: block !important;
+    opacity: 1 !important;
+    transition: all 1000 ease-in;
+}
+
+#tab-1-content .tab-1-content-inner {
+    display: grid;
+    grid-template-columns: 5fr;
+    grid-gap: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#tab-2-content .tab-2-content-inner {
+    display: grid;
+    grid-template-columns: 5fr;
+    grid-gap: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#tab-3-content .tab-3-content-inner {
+    display: grid;
+    grid-template-columns: 5fr;
+    grid-gap: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.btn-blue {
+    position: relative;
+    border: none;
+    display: block;
+    padding: 15px 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.25s;
+    background-color: aliceblue;
+    color: #44a2ce;
+    margin: 40px auto;
+   
+}
+
+.btn-blue:hover {
+    letter-spacing: 2px;
+    transform: scale(1.2);
+    cursor: pointer;
+    margin:auto;
+}
+
+@media(min-width: 800px){
+    .tabs {
+        width: 800px;
+        margin: auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    .tab-content {
+        width: 800px;
+        margin: auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    h3 {
+        text-align: left;
+    }
+}
+
+
+.fit-picture{
+	height:280px;
+	width:360px;
+	border-radius:30px;
+	border:thin;
+}
+
+
+.calender{
+	float:right;
+}
+
+#pgname{
+	text-align:center;
+}
+
+.calender {
+    background-color: aliceblue;
+    color: #44a2ce;
+    font-weight: bold;
+    border-radius: 20px;
+    text-align:center;
+    height:130px;
+    padding: 15px 80px;
+    float:right;
+    display:box;
+    margin:auto auto auto 90px;
+    
+}
+
+td {
+	text-align:center;
+}
+
+#day {
+	margin:auto;
+}
+
+.navbar{
+	float:top;
+}
+
+
