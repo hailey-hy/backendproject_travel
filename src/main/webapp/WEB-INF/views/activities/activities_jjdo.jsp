@@ -105,7 +105,7 @@
 		<input id="gsdo" class="tab-item" type="button" value="경상도">&nbsp;
 		<input id="jjdo" class="tab-item tab-background" type="button" value="제주도">&nbsp;
 	</div> -->
-	<aside class="left">
+	<aside class="aside">
 			<jsp:include page="activities_sidebar.jsp"/>
 		</aside>
 		<section>
@@ -208,6 +208,6 @@
 	<br>
 	<br>
 	</section>
-	<footer></footer>
+	<footer class="footer"><jsp:include page="footer.jsp" /></footer>
 </body>
 </html>
