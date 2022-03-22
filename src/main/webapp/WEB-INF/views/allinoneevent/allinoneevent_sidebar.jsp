@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<div class="sidebar">
+	<div class="aside">
 	<h3>지역선택</h3>
 		<ul>
 			<li><a href="">제주</a></li>

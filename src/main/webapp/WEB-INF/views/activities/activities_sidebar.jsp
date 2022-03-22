@@ -12,7 +12,7 @@ ul{
 </style>
 </head>
 <body>
-	<div class="left">
+	<div class="aside">
 		<h3>지역선택</h3>
 		<ul>
 			<li><a href="/activities_gwdo.jsp">강원도</a></li>
