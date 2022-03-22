@@ -91,6 +91,7 @@ $(document).ready(function() {
 		<br>
 		<h1>숙박 예약</h1>
 		<br>
+		<h1>승아 테스트</h1>
 	</header>
 	<hr>
 	<br>
