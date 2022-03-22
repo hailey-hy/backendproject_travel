@@ -1,11 +1,11 @@
-package com.korea.travel.customer.controller;
+package com.korea.travel.customer;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-public class CostomerController {
+public class CustomerController {
 
 	// 1. 자주묻는질문 뷰
 	@RequestMapping("/faq")

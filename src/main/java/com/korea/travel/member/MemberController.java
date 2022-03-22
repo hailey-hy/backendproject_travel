@@ -1,4 +1,4 @@
-package com.korea.travel.member.controller;
+package com.korea.travel.member;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

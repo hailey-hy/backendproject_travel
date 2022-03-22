@@ -1,4 +1,4 @@
-package com.korea.travel.purchase.controller;
+package com.korea.travel.purchase;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
