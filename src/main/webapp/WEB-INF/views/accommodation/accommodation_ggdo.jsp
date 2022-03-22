@@ -103,6 +103,7 @@ $(document).ready(function() {
 	</div> -->
 	<aside class="aside">
 			<jsp:include page="accomodation_sidebar.jsp"/>
+			
 		</aside>
 		<section>
 	<form class="reserveInput" action="Purchase.html">
