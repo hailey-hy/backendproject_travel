@@ -87,7 +87,7 @@
 			</ul>
 		</div>
 	</nav>
-	<header id="title">
+	<header class="title">
 		<br>
 		<br>
 		<h1>여행지 티켓 예매</h1>
@@ -181,7 +181,7 @@
 	<br>
 	<br>
 	</section>
-	<footer class="footer"><jsp:include page="footer.jsp" /></footer>
+	<footer class="footer"><jsp:include page="../include/footer.jsp" /></footer>
 	
 </body>
 </html>

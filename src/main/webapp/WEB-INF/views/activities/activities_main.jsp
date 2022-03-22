@@ -83,7 +83,7 @@ margin: auto;
 			</ul>
 		</div>
 	</nav>
-	<header id="title">
+	<header class="title">
 		<br>
 		<br>
 		<!-- <img id="logo" alt="웹사이트 로고" src="logo.jpg"> -->
@@ -129,11 +129,12 @@ margin: auto;
 			</td>
 		</tr>
 	</table>
+	</form>
 	<br>
 	<br>
 	<br>
 	</section>
-	<footer class="footer"><jsp:include page="footer.jsp" /></footer>
+	<footer class="footer"><jsp:include page="../include/footer.jsp" /></footer>
 	
 </body>
 </html>
