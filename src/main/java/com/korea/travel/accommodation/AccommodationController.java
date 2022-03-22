@@ -12,6 +12,7 @@ public class AccommodationController {
 	public ModelAndView mainView() throws Exception {
 		ModelAndView mv = new ModelAndView(); 
 		mv.setViewName("accommodation/accommodation_main");
+		System.out.println("정민 테스트");
 		return mv; 
 	}
 	// 2. 충청도 뷰
