@@ -46,43 +46,7 @@ margin: auto;
 </script>
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href="#">&nbsp;&nbsp;<img src="./img/logo.png" width="50px" height="50px">&nbsp;&nbsp;전국이내손안에</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse"
-			data-target="#navbarSupportedContent"
-			aria-controls="navbarSupportedContent" aria-expanded="false"
-			aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="main.html">Home <span class="sr-only"><!-- (current) --></span></a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="accommodation_main.html">숙박예약</a>
-				  </li>
-				   <li class="nav-item">
-					<a class="nav-link" href="small.html">렌트카</a>
-				  </li>
-				   <li class="nav-item">
-					<a class="nav-link" href="Event.html">올인원가성비이벤트</a>
-				  </li>
-				<li class="nav-item dropdown"><a
-					class="nav-link dropdown-toggle" href="mypage.html" id="navbarDropdown"
-					role="button" data-bs-toggle="dropdown" aria-expanded="false">
-						마이페이지 </a>
-					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<li><a class="dropdown-item" href="#">예약내역 확인</a></li>
-						<li><a class="dropdown-item" href="#">문의사항 확인</a></li>
-						<li><hr class="dropdown-divider"></li>
-						<li><a class="dropdown-item" href="#">회원 정보 수정</a></li>
-					</ul></li>
-				<li class="nav-item"><a class="nav-link disabled" href="#">이벤트
-						준비 중</a></li>
-			</ul>
-		</div>
-	</nav>
+	<jsp:include page="../include/nav.jsp" />
 	<header class="title">
 		<br>
 		<br>
@@ -100,36 +64,40 @@ margin: auto;
 		<input id="gsdo" class="tab-item" type="button" value="경상도">&nbsp;
 		<input id="jjdo" class="tab-item" type="button" value="제주도">&nbsp;
 	</div> -->
-	<aside class="aside">
-			<jsp:include page="activities_sidebar.jsp"/>
-		</aside>
-		<section>
-	<br>
-	<table id="mainPara">
-		<tr>
-			<td>
-				<h3 id="mainParaTitle">여행 계획 세우시기 막막하시죠?</h3><br>
-				<p class="para">여행 전에 미리 방문하실 여행지 
-				<br>체험장/ 이벤트/ 박물관/ 놀이공원 티켓 준비하시어
-				<br>즐겁고 꽉찬 여행되실 수 있게 
-				<br>저희 <strong>"전국이 내 손 안에"</strong>가 도와드리겠습니다!</p><br>
-				<p id="para" class="para">현장 구입보다 <u>저렴하게!</u> <u>알뜰하게!</u>
-				<br>최대 85% 티켓 할인 혜택을 놓치지 마세요!<p>
-			</td>
-			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-			<td>
-				<div id="photoParent">
-					<img class="photo" alt="가평 아침 고요 수목원" src="<%=request.getContextPath() %>/resources/img/arboretumEx2_ggdo.jpg">
-					<img class="photo" alt="대관령 아기동물 체험장" src="<%=request.getContextPath() %>/resources/img/animalEx_gwdo.jpg">
-					<img class="photo" alt="스플라스 리솜 워터파크" src="<%=request.getContextPath() %>/resources/img/waterParkEx_ccdo.jpg">
-					<img class="photo" alt="해남 명량 케이블카" src="<%=request.getContextPath() %>/resources/img/cableOceanEx_jldo.jpg">
-					<img class="photo" alt="양산 에덴 밸리 눈썰매" src="<%=request.getContextPath() %>/resources/img/sledEx2_gsdo.jpg">
-					<img class="photo" alt="제주 감귤 박물관" src="<%=request.getContextPath() %>/resources/img/tangerineEx_jjdo.jpg">
-				</div>
-			</td>
-		</tr>
-	</table>
-	</form>
+	<div class="main-container">
+		<div class="main-item-1">
+			<aside class="aside">
+					<jsp:include page="activities_sidebar.jsp"/>
+				</aside>
+			<br>
+		</div>
+		<div class="main-item">
+			<table id="mainPara">
+				<tr>
+					<td>
+						<h3 id="mainParaTitle">여행 계획 세우시기 막막하시죠?</h3><br>
+						<p class="para">여행 전에 미리 방문하실 여행지 
+						<br>체험장/ 이벤트/ 박물관/ 놀이공원 티켓 준비하시어
+						<br>즐겁고 꽉찬 여행되실 수 있게 
+						<br>저희 <strong>"전국이 내 손 안에"</strong>가 도와드리겠습니다!</p><br>
+						<p id="para" class="para">현장 구입보다 <u>저렴하게!</u> <u>알뜰하게!</u>
+						<br>최대 85% 티켓 할인 혜택을 놓치지 마세요!<p>
+					</td>
+					<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+					<td>
+						<div id="photoParent">
+							<img class="photo" alt="가평 아침 고요 수목원" src="<%=request.getContextPath() %>/resources/img/arboretumEx2_ggdo.jpg">
+							<img class="photo" alt="대관령 아기동물 체험장" src="<%=request.getContextPath() %>/resources/img/animalEx_gwdo.jpg">
+							<img class="photo" alt="스플라스 리솜 워터파크" src="<%=request.getContextPath() %>/resources/img/waterParkEx_ccdo.jpg">
+							<img class="photo" alt="해남 명량 케이블카" src="<%=request.getContextPath() %>/resources/img/cableOceanEx_jldo.jpg">
+							<img class="photo" alt="양산 에덴 밸리 눈썰매" src="<%=request.getContextPath() %>/resources/img/sledEx2_gsdo.jpg">
+							<img class="photo" alt="제주 감귤 박물관" src="<%=request.getContextPath() %>/resources/img/tangerineEx_jjdo.jpg">
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
 	<br>
 	<br>
 	<br>

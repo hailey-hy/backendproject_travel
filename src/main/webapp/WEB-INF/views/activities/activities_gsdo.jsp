@@ -52,43 +52,7 @@
 </script>
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href="#">&nbsp;&nbsp;<img src="./img/logo.png" width="50px" height="50px">&nbsp;&nbsp;전국이내손안에</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse"
-			data-target="#navbarSupportedContent"
-			aria-controls="navbarSupportedContent" aria-expanded="false"
-			aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="main.html">Home <span class="sr-only"><!-- (current) --></span></a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="accommodation_main.html">숙박예약</a>
-				  </li>
-				   <li class="nav-item">
-					<a class="nav-link" href="small.html">렌트카</a>
-				  </li>
-				   <li class="nav-item">
-					<a class="nav-link" href="Event.html">올인원가성비이벤트</a>
-				  </li>
-				<li class="nav-item dropdown"><a
-					class="nav-link dropdown-toggle" href="mypage.html" id="navbarDropdown"
-					role="button" data-bs-toggle="dropdown" aria-expanded="false">
-						마이페이지 </a>
-					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<li><a class="dropdown-item" href="#">예약내역 확인</a></li>
-						<li><a class="dropdown-item" href="#">문의사항 확인</a></li>
-						<li><hr class="dropdown-divider"></li>
-						<li><a class="dropdown-item" href="#">회원 정보 수정</a></li>
-					</ul></li>
-				<li class="nav-item"><a class="nav-link disabled" href="#">이벤트
-						준비 중</a></li>
-			</ul>
-		</div>
-	</nav>
+	<jsp:include page="../include/nav.jsp" />
 	<header class="title">
 		<br>
 		<br>
@@ -105,9 +69,13 @@
 		<input id="gsdo" class="tab-item tab-background" type="button" value="경상도">&nbsp;
 		<input id="jjdo" class="tab-item" type="button" value="제주도">&nbsp;
 	</div> -->
+	<div class="main-container">
+		<div class="main-item-1">
 	<aside class="aside">
 			<jsp:include page="activities_sidebar.jsp"/>
 		</aside>
+		</div>
+		<div class="main-item">
 		<section>
 	<form action="Purchase.html" class="reserveInput">
 		<table class="tbl">
@@ -199,6 +167,8 @@
 	<br>
 	<br>
 	</section>
+	</div>
+	</div>
 	<footer class="footer"><jsp:include page="../include/footer.jsp" /></footer>
 </body>
 </html>

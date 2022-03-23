@@ -4,24 +4,42 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<style>
-ul{
-   list-style:none;
-    list-style-type:none;
-   }
-</style>
 </head>
 <body>
 	<div class="aside">
-		<h3>지역선택</h3>
-		<ul>
-			<li><a href="/activities_gwdo.jsp">강원도</a></li>
-			<li><a href="/activities_ggdo.jsp">경기도</a></li>
-			<li><a href="/activities_gsdo.jsp">경상도</a></li>
-			<li><a href="/activities_jldo.jsp">전라도</a></li>
-			<li><a href="/activities_jjdo.jsp">제주도</a></li>
-			<li><a href="/activities_ccdo.jsp">충청도</a></li>
-		</ul>
+		<div class="aside-container">
+			<h3 class="aside-title">지역선택</h3>
+            <a href="activities/gwdo">
+	            <div class="aside-tab-item">
+	                <p class="tab-text">강원도</p>
+	            </div>
+            </a>
+            <a href="activities/ggdo">
+	            <div class="aside-tab-item">
+	                <p class="tab-text">경기도</p>
+	            </div>
+            </a>
+            <a href="activities/gsdo">
+	            <div class="aside-tab-item">
+	                <p class="tab-text">경상도</p>
+	            </div>
+            </a>
+            <a href="activities/jldo">
+	            <div class="aside-tab-item">
+	                <p class="tab-text">전라도</p>
+	            </div>
+            </a>
+            <a href="activities/jjdo">
+	            <div class="aside-tab-item">
+	                <p class="tab-text">제주도</p>
+	            </div>
+            </a>
+            <a href="activities/ccdo">
+	            <div class="aside-tab-item">
+	                <p class="tab-text">충청도</p>
+	            </div>
+            </a>
+        </div>
 	</div>
 
 

@@ -13,8 +13,5 @@ public class MainController{
 		ModelAndView mv = new ModelAndView(); 
 		mv.setViewName("main");
 		return mv; 
-		
-		
 	}
-
 }

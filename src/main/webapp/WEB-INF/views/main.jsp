@@ -12,26 +12,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">&nbsp;&nbsp;<img src="<%=request.getContextPath() %>/resources/img/logo.png" width="50px" height="50px">&nbsp;&nbsp;전국이내손안에</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="mypage.html">마이페이지</a>
-            </li>
-             <li class="nav-item">
-              <a class="nav-link" href="login.html">로그인</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">로그아웃</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+    <jsp:include page="include/nav.jsp" />
 
     <header class="showcase">
         <div class="showcase-content">
@@ -46,26 +27,27 @@
         <br><br><br>
 
         <div class="menu">
-        <div>
+        <!-- <div>
             <a href="accommodation_main.html" class="w-btn-neon">숙박 예약 </a>
         </div>
         <div>
             <a href="small.html" class="w-btn-neon">렌트카 예약 </i></a>
-        </div>
+        </div> -->
         <div>
-            <a href="activities_main.html" class="w-btn-neon">여행지 티켓 예약 </i></a>
+        	<a href="activities" class="w-btn-neon">여행지 티켓 예약</a>
+            <%-- <% response.sendRedirect("../activities/activities_main.jsp");%> --%>
         </div>
-        <div>
+       <!--  <div>
             <a href="Event.html" class="w-btn-neon">올인원 가성비 이벤트 </a>
         </div>
         <div>
             <a href="Review.html" class="w-btn-neon">후기 </i></a>
-        </div>
+        </div> -->
         </div>
 
     </header>
 
-    <section class="tabs">
+<!--     <section class="tabs">
         <div class="container">
             <div id="tab-1" class="tab-item tab-border">
                 <p>공지사항</p>
@@ -74,9 +56,9 @@
                 <p>자주 묻는 질문</p>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <section class="tab-content">
+<!--     <section class="tab-content">
         <div class="container">
             <div id="tab-1-content" class="tab-content-item show">
                 <div class="tab-1-content-inner">
@@ -99,7 +81,7 @@
                     </div>
                 </div>
             </div>
-    </section>
+    </section> -->
 
 
     <script src="js/main.js"></script>

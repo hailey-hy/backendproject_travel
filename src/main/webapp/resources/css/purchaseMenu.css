@@ -65,7 +65,7 @@ div#title {
 	width: 600px;
 }
 #float-container{
-	margin-left: 100px;
+	margin-left: 1rem;
 }
 #float-container div{
  	text-align: center; 
@@ -87,7 +87,7 @@ label{
 	font-size: 30px;	
 }
 #mainPara{
-	margin: 30px auto;
+	margin: 0.5rem auto;
 	
 }
 #mainParaTitle{
@@ -127,3 +127,78 @@ label{
 	transform: scale(1.2);
 }
 
+/* 메인 화면 2열 표시 */
+.main-container{
+display: grid;
+grid-template-columns: 0.8fr 3fr;
+grid-gap: 1rem;
+}
+
+.main-item-1{
+	display:block;
+	align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* aside */
+
+.aside-container a{
+	text-decoration-line: none;
+	color: black;
+}
+
+.aside-container {
+    display: inline-block;
+    width: 200px;
+    height: 700px;
+    line-height: 80px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   	padding: 0.5rem;
+    margin: 0.5rem;
+}
+.aside-tab-item{
+	margin-bottom: 0.2rem;
+	background-color: #F2F2F2;
+    border-radius: 20px;
+}
+
+.aside-tab-item p{
+	font-size: 18px;
+}
+
+.aside-tab-item:hover {
+    background-color: aliceblue;
+    color: #44a2ce;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+}    
+
+.aside-title{
+	margin-top: 0.5rem;
+	margin-bottom:0.5rem;
+	padding-bottom: 1rem;
+}
+
+/* footer */
+.footer {
+    max-width: 75%;
+    margin: 1rem auto;
+    overflow: auto;
+    margin-bottom: 0rem;
+    color : #999;
+    font-size: 0.9rem;
+}
+
+.footer .footer-cols {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+}
+
+.footer li {
+    line-height: 1.9;
+}

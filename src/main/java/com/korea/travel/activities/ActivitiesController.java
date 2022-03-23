@@ -19,7 +19,7 @@ public class ActivitiesController {
 	@RequestMapping("/activities/ccdo")
 	public ModelAndView ccdoView() throws Exception {
 		ModelAndView mv = new ModelAndView(); 
-		mv.setViewName("activities_ccdo");
+		mv.setViewName("activities/activities_ccdo");
 		return mv; 
 	}
 	
