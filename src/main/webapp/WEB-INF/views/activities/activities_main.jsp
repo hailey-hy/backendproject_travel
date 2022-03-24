@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <title>전국이내손안에 - 여행지티켓</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-<link href="<%=request.getContextPath() %>/resources/css/purchaseMenu.css" rel="stylesheet">
+<link href="<%=request.getContextPath() %>/resources/css/activities_main.css" rel="stylesheet">
 <script src="<%=request.getContextPath() %>/resources/jquery-3.6.0.min.js"></script>
 <script src="<%=request.getContextPath() %>/resources/js/btnFunction.js"></script>
 <style>

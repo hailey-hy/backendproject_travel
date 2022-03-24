@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@taglib uri="http://java.sun.com/jstl/core_rt" prefix="c"%>
+<%@taglib uri="http://www.springframework.org/tags" prefix="spring" %>
+<%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <!DOCTYPE html>
 <html>
 
@@ -11,9 +14,102 @@
 <link href="<%=request.getContextPath() %>/resources/css/login.css" rel="stylesheet"/>
 <script src="<%=request.getContextPath() %>/resources/jquery-3.6.0.min.js"></script>
 </head>
-
 <body>
+<jsp:include page="../include/nav.jsp" />
+	<div class="main-container">
+    <header class="logo">
+    <div>
+        로그인 페이지
+    </div>
+    <br><br>
+    </header>
+    <contant class="login-container">
+    <c:choose>
+    <c:when test="${empty sessionScope.id}">
+    <form id="loginFrm" name="loginFrm" action="logincheck">
+    <center>
+    <input type="text" class="id" placeholder="아이디" id="id" name="id"/>
+    <input type="password" class="password" placeholder="비밀번호" id="password" name="password" /><br>
+    <c:if test="${msg == '실패'}">
+		아이디 또는 패스워드가 틀렸습니다.
+	</c:if>
+	</center>
+		<input type="button" id="login" value="로그인" class="loginBtn" /><!--여기 -->
+				</form>
+			</c:when>
+			<c:otherwise>
+			<center>
+				${sessionScope.id}님 환영합니다.<br><br>
+				<a href="logout">로그아웃</a>
+			</center>
+			</c:otherwise>
+		</c:choose>
+    </contant>
+  </div>
 
+
+	<%-- <h1>로그인 페이지</h1>
+	<hr />
+		<c:choose>
+			<c:when test="${empty sessionScope.id}">
+			<!-- 로그인이 안되어 있으면 -->
+				<form id="loginFrm" name="loginFrm" action="logincheck">
+					<table>
+						<tr>
+							<td>아이디</td>
+							<td><input type="text" name="id" id="id" placeholder="10글자" maxlength="10"></td>
+						</tr>
+						<tr>
+							<td>패스워드</td>
+							<td><input type="password" name="password" id="password" maxlength="10"></td>
+						</tr>
+						<c:if test="${msg == '실패'}">
+							<tr>
+								<td colspan=2>
+									아이디 또는 패스워드가 틀렸습니다.
+								</td>
+							</tr>
+						</c:if>
+						<tr>
+							<td colspan=2>
+								<input type="button" id="login" value="로그인" /><!--여기 -->
+							</td>
+						</tr>
+					</table>
+				</form>
+			</c:when>
+			<c:otherwise>
+				<h3>${sessionScope.id}님 환영합니다.</h3>
+				<a href="logout">로그아웃</a>
+			</c:otherwise>
+		</c:choose> --%>
+		<center>
+	<footer class="footer"><jsp:include page="../include/footer.jsp" /></footer>
+	</center>
+</body>
+<script type="text/javascript">
+	$(document).ready(function(e){
+		$('#login').click(function(){
+
+			// 입력 값 체크
+			if($.trim($('#id').val()) == ''){
+				alert("아이디를 입력해 주세요.");
+				$('#id').focus();
+				return;
+			}else if($.trim($('#password').val()) == ''){
+				alert("패스워드를 입력해 주세요.");
+				$('#password').focus();
+				return;
+			}
+			
+			//전송
+			$('#loginFrm').submit();
+		});
+		
+	});
+</script>
+</html>
+<%-- 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">&nbsp;&nbsp;<img src="img/logo.png" width="50px" height="50px">&nbsp;&nbsp;전국이내손안에</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,7 +161,7 @@
     <footer><a href='signup.html' style="text-decoration:none">아이디가 없으신가요?</a></footer>
   </div>
 <script src="js/login.js"></script>
-<footer class="footer"><jsp:include page="../include/footer.jsp" /></footer>
-</body>
+
+</body> --%>
 
 </html>

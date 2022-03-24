@@ -9,36 +9,38 @@
 	<div class="aside">
 		<div class="aside-container">
 			<h3 class="aside-title">지역선택</h3>
-            <a href="activities/gwdo">
+			<form action="activities" method="post">
+            	<a href="/travel/activities?location=강원도">
 	            <div class="aside-tab-item">
 	                <p class="tab-text">강원도</p>
 	            </div>
             </a>
-            <a href="activities/ggdo">
+            <a href="/travel/activities?location=경기도">
 	            <div class="aside-tab-item">
 	                <p class="tab-text">경기도</p>
 	            </div>
             </a>
-            <a href="activities/gsdo">
+            <a href="/travel/activities?location=경상도">
 	            <div class="aside-tab-item">
 	                <p class="tab-text">경상도</p>
 	            </div>
             </a>
-            <a href="activities/jldo">
+            <a href="/travel/activities?location=전라도">
 	            <div class="aside-tab-item">
 	                <p class="tab-text">전라도</p>
 	            </div>
             </a>
-            <a href="activities/jjdo">
+            <a href="/travel/activities?location=제주도">
 	            <div class="aside-tab-item">
 	                <p class="tab-text">제주도</p>
 	            </div>
             </a>
-            <a href="activities/ccdo">
+            <a href="/travel/activities?location=충청도">
 	            <div class="aside-tab-item">
 	                <p class="tab-text">충청도</p>
 	            </div>
             </a>
+            </form>
         </div>
 	</div>
 

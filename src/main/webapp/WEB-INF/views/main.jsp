@@ -34,7 +34,7 @@
             <a href="small.html" class="w-btn-neon">렌트카 예약 </i></a>
         </div> -->
         <div>
-        	<a href="activities" class="w-btn-neon">여행지 티켓 예약</a>
+        	<a href="/travel/activities/main" class="w-btn-neon">여행지 티켓 예약</a>
             <%-- <% response.sendRedirect("../activities/activities_main.jsp");%> --%>
         </div>
        <!--  <div>

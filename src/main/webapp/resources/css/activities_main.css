@@ -130,7 +130,7 @@ label{
 /* 메인 화면 3열 표시 */
 .main-container{
 display: grid;
-grid-template-columns: 2fr 3fr 1fr;
+grid-template-columns: 1fr 3fr;
 grid-gap: 1rem;
 width: 100rem;
 justify-content: center;
@@ -145,7 +145,7 @@ justify-content: center;
 
 .main-item-3{
 	display:grid;
-	grid-template-clomns: 1fr;
+	grid-template-columns: 1fr;
 	grid-gap: 1rem;
 	align-items: top;
     justify-content: top;
@@ -201,15 +201,14 @@ justify-content: center;
 /* footer */
 .footer {
     max-width: 75%;
-    margin-top: 1rem;
+    margin: 1rem auto;
     overflow: auto;
     margin-bottom: 0rem;
     color : #999;
     font-size: 0.9rem;
-    
 }
 
-.footer-cols {
+.footer .footer-cols {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 2rem;

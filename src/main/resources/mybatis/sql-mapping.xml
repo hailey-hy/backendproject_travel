@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.korea.travel.activities" >
+	<!-- 조건에 따른 activities 정보 조회 -->
+	<select id="locationsearch" resultType="activitiesdto" parameterType="String">
+		select * from activities_table where location = #{location}
+	</select>
+</mapper>
+
+<!-- jQuery = $()
+	JSTL el = ${}
+	Mybatis = #{} = 블록 내부에는 변수명 = 그외에는 모두 sql쿼리문 -->
