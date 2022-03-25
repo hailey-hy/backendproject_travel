@@ -20,7 +20,7 @@
   <div class="main-container">
     <header class="logo">
       <div>
-        <br><br>환영합니다!
+        <br><h4>환영합니다!</h4>
       </div>
       <br><br>
     </header>

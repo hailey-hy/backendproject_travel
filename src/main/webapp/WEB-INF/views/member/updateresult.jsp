@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,7 +23,7 @@
 <div class="result-container">
 <div class="result-text">
 <c:if test="${result == 1 }">
-	<p> 회원 정보가 정상적으로 수정되었습니다. </p>
+	<p><%=request.getParameter("id") %>님, <br>회원 정보가 정상적으로 수정되었습니다. </p>
 </c:if>
 </div>
 </div>

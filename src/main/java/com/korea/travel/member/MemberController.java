@@ -58,6 +58,7 @@ public class MemberController {
 		// dto.setId(request.getParameter("id")
 		int result = service.updatemember(dto);
 		ModelAndView mv = new ModelAndView();
+		mv.addObject("memberdto", dto);
 		mv.addObject("result", result); // 업데이트 행의 갯수
 		mv.setViewName("member/updateresult");
 		return mv;
@@ -88,7 +89,7 @@ public class MemberController {
 		
 		service.logout(session); // 구현해야함
 		ModelAndView mv = new ModelAndView();
-		mv.setViewName("member/login");
+		mv.setViewName("main");
 		mv.addObject("msg", "logout");
 		
 		return mv;
