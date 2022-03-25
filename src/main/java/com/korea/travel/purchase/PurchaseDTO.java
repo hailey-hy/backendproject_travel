@@ -26,7 +26,7 @@ public class PurchaseDTO {
 		public String getEventDate() {
 			return eventDate;
 		}
-		public void setEventDate(String date) {
+		public void setEventDate(String eventDate) {
 			this.eventDate = eventDate;
 		}
 //		public String getPrice() {

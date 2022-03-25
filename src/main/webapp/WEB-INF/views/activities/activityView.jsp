@@ -170,21 +170,11 @@
 					<div class="item">
 					<label>티켓명</label><br>
 						<select name="product">
-							<option value="강촌 ATV 카트"> 강촌 ATV 카트</option>
-							<option value="대관령 아기동물 체험장"> 대관령 아기동물 체험장</option>
-							<option value="버드파크"> 버드파크</option>
-							<option value="아침 고요 수목원"> 아침 고요 수목원</option>
-							<option value="캐니언파크 실내 동물원 테마파크"> 캐니언파크 실내 동물원 테마파크</option>
-							<option value="경주월드 자유이용권"> 경주월드 자유이용권</option>
-							<option value="대구 아쿠아리움"> 대구 아쿠아리움</option>
-							<option value="에덴 밸리 눈썰매 & 빙어 체험장">에덴 밸리 눈썰매 & 빙어 체험장</option>
-							<option value="명량 케이블카 & 땅끝 해양 자연사 박물관">명량 케이블카 & 땅끝 해양 자연사 박물관</option>
-							<option value="쥬키아이스파크 입장권">쥬키아이스파크 입장권</option>
-							<option value="감귤 박물관">감귤 박물관</option>
-							<option value="제주 바다 체험장">제주 바다 체험장</option>
-							<option value="허브 동산">허브 동산</option>
-							<option value="스플라스 리솜 워터파크">스플라스 리솜 워터파크</option>
-							<option value="스퍼스트빌리지 공룡월드">스퍼스트빌리지 공룡월드</option>
+						<c:if test="${!empty param.location}">
+						<c:forEach items="${activityLocationList}" var="dto">	
+							<option value="${dto.product}">${dto.product }</option>
+						</c:forEach>
+						</c:if>
 						</select>
 						<%-- <c:if test="${product=}">
 						<c:forEach items="${activityLocationList}" var="dto">
@@ -198,7 +188,7 @@
 					<div class="item">
 					<label>예약 날짜</label><br>
 						<!-- <input name="date" type="text"> -->
-						<input type="date" name="date"  class="date" id="activities_date" required><br><br><br>
+						<input type="date" name="eventDate"  class="date" id="activities_date" required><br><br><br>
 						<input id="activities_submit" class="btn-blue" type="submit" value="예매하기" required />	
 					</div>
 					</form>

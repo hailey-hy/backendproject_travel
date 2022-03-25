@@ -37,7 +37,7 @@
     <c:if test="${!empty paramValues}">
     	<h2 id="item-name-1">티켓명: ${purchaseDTO.product}</h2>
     	<h2 id="item-name-2">티켓 매수: ${purchaseDTO.count}</h2>
-    	<h2 id="item-name-3">예약 날짜: <%= request.getParameter("date")%></h2>
+    	<h2 id="item-name-3">예약 날짜: ${purchaseDTO.eventDate}</h2>
     </c:if>
         <h2 id="item-price">결제 금액: 30000원</h2>
     </section>
