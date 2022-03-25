@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <link href="<%=request.getContextPath() %>/resources/css/login.css" rel="stylesheet"/>
-<title>Insert title here</title>
+<title>전국이내손안에 - 회원정보수정</title>
 </head>
 <body>
 <%-- <jsp:include page="../include/nav.jsp"/>

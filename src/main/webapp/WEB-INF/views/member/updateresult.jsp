@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <link href="<%=request.getContextPath() %>/resources/css/result.css" rel="stylesheet"/>
-<title>Insert title here</title>
+<title>전국이내손안에 - 회원정보수정</title>
 <script src="resources/jquery-3.6.0.min.js"></script>
 <script type="text/javascript">
 	$(document).ready(function(){

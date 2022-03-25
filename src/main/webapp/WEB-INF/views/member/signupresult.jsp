@@ -13,7 +13,7 @@
 </script>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <link href="<%=request.getContextPath() %>/resources/css/result.css" rel="stylesheet"/>
-<title>Insert title here</title>
+<title>전국이내손안에 - 회원가입</title>
 </head>
 <body>
 <jsp:include page="../include/nav.jsp" />
